@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistem Terdeteksi!</title>
+    <style>
+        body { background-color: black; color: red; text-align: center; font-family: sans-serif; padding-top: 100px; }
+        h1 { font-size: 50px; }
+    </style>
+</head>
+<body>
+    <h1>SISTEM DALAM BAHAYA!</h1>
+    <p>Jangan klik tombol di bawah...</p>
+    <button onclick="mulaiGangguan()">AKTIFKAN</button>
+
+    <script>
+        function mulaiGangguan() {
+            // Loop yang akan terus memunculkan alert
+            while(true) {
+                alert("Peringatan: Kamu tidak bisa keluar dari sini!");
+                alert("Error 404: Keberanian tidak ditemukan.");
+                // Catatan: Browser modern biasanya punya opsi "Prevent this page from creating additional dialogs"
+                // Jadi ini tidak akan benar-benar mengunci komputer selamanya.
+            }
+        }
+    </script>
+</body>
+</html>
